@@ -1,0 +1,150 @@
+2024/12/11 10:41:18 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES) in C:\xampp\htdocs\yiiapp\yii\framework\db\CDbConnection.php:399
+Stack trace:
+#0 C:\xampp\htdocs\yiiapp\yii\framework\db\CDbConnection.php(347): CDbConnection->open()
+#1 C:\xampp\htdocs\yiiapp\yii\framework\db\CDbConnection.php(325): CDbConnection->setActive(true)
+#2 C:\xampp\htdocs\yiiapp\yii\framework\base\CModule.php(394): CDbConnection->init()
+#3 C:\xampp\htdocs\yiiapp\yii\framework\cli\commands\MigrateCommand.php(472): CModule->getComponent('db')
+#4 C:\xampp\htdocs\yiiapp\yii\framework\cli\commands\MigrateCommand.php(481): MigrateCommand->getDbConnection()
+#5 C:\xampp\htdocs\yiiapp\yii\framework\cli\commands\MigrateCommand.php(512): MigrateCommand->getMigrationHistory(-1)
+#6 C:\xampp\htdocs\yiiapp\yii\framework\cli\commands\MigrateCommand.php(84): MigrateCommand->getNewMigrations()
+#7 [internal function]: MigrateCommand->actionUp(Array)
+#8 C:\xampp\htdocs\yiiapp\yii\framework\console\CConsoleCommand.php(177): ReflectionMethod->invokeArgs(Object(MigrateCommand), Array)
+#9 C:\xampp\htdocs\yiiapp\yii\framework\console\CConsoleCommandRunner.php(71): CConsoleCommand->run(Array)
+#10 C:\xampp\htdocs\yiiapp\yii\framework\console\CConsoleApplication.php(92): CConsoleCommandRunner->run(Array)
+#11 C:\xampp\htdocs\yiiapp\yii\framework\base\CApplication.php(185): CConsoleApplication->processRequest()
+#12 C:\xampp\htdocs\yiiapp\yii\framework\yiic.php(33): CApplication->run()
+#13 C:\xampp\htdocs\yiiapp\protected\yiic.php(7): require_once('C:\\xampp\\htdocs...')
+#14 C:\xampp\htdocs\yiiapp\protected\yiic(4): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+---
+2024/12/11 10:44:02 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'yii.tbl_migration' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `tbl_migration`.
+2024/12/11 14:41:53 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "index". in C:\xampp\htdocs\yiiapp\yii\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\yiiapp\yii\framework\web\CController.php(270): CController->missingAction('index')
+#1 C:\xampp\htdocs\yiiapp\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#2 C:\xampp\htdocs\yiiapp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('books/index')
+#3 C:\xampp\htdocs\yiiapp\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\yiiapp\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yiiapp/index.php/books/index
+---
+2024/12/11 14:42:25 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "crate". in C:\xampp\htdocs\yiiapp\yii\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\yiiapp\yii\framework\web\CController.php(270): CController->missingAction('crate')
+#1 C:\xampp\htdocs\yiiapp\yii\framework\web\CWebApplication.php(282): CController->run('crate')
+#2 C:\xampp\htdocs\yiiapp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('books/crate')
+#3 C:\xampp\htdocs\yiiapp\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\yiiapp\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yiiapp/index.php/books/crate
+---
+2024/12/11 14:57:15 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "index". in C:\xampp\htdocs\yiiapp\yii\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\yiiapp\yii\framework\web\CController.php(270): CController->missingAction('index')
+#1 C:\xampp\htdocs\yiiapp\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#2 C:\xampp\htdocs\yiiapp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('books/index')
+#3 C:\xampp\htdocs\yiiapp\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\yiiapp\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yiiapp/index.php/books/index
+---
+2024/12/11 14:59:54 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "index". in C:\xampp\htdocs\yiiapp\yii\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\yiiapp\yii\framework\web\CController.php(270): CController->missingAction('index')
+#1 C:\xampp\htdocs\yiiapp\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#2 C:\xampp\htdocs\yiiapp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('books/index')
+#3 C:\xampp\htdocs\yiiapp\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\yiiapp\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yiiapp/index.php/books/index
+---
+2024/12/11 14:59:56 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "index". in C:\xampp\htdocs\yiiapp\yii\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\yiiapp\yii\framework\web\CController.php(270): CController->missingAction('index')
+#1 C:\xampp\htdocs\yiiapp\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#2 C:\xampp\htdocs\yiiapp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('books/index')
+#3 C:\xampp\htdocs\yiiapp\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\yiiapp\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yiiapp/index.php/books/index
+---
+2024/12/11 15:00:59 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "index". in C:\xampp\htdocs\yiiapp\yii\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\yiiapp\yii\framework\web\CController.php(270): CController->missingAction('index')
+#1 C:\xampp\htdocs\yiiapp\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#2 C:\xampp\htdocs\yiiapp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('books/index')
+#3 C:\xampp\htdocs\yiiapp\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\yiiapp\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yiiapp/index.php/books/index
+---
+2024/12/11 15:01:02 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "index". in C:\xampp\htdocs\yiiapp\yii\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\yiiapp\yii\framework\web\CController.php(270): CController->missingAction('index')
+#1 C:\xampp\htdocs\yiiapp\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#2 C:\xampp\htdocs\yiiapp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('books/index')
+#3 C:\xampp\htdocs\yiiapp\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\yiiapp\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yiiapp/index.php/books/index
+---
+2024/12/11 15:01:05 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "index". in C:\xampp\htdocs\yiiapp\yii\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\yiiapp\yii\framework\web\CController.php(270): CController->missingAction('index')
+#1 C:\xampp\htdocs\yiiapp\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#2 C:\xampp\htdocs\yiiapp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('books/index')
+#3 C:\xampp\htdocs\yiiapp\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\yiiapp\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yiiapp/index.php/books/index
+---
+2024/12/11 15:02:26 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "index". in C:\xampp\htdocs\yiiapp\yii\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\yiiapp\yii\framework\web\CController.php(270): CController->missingAction('index')
+#1 C:\xampp\htdocs\yiiapp\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#2 C:\xampp\htdocs\yiiapp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('books/index')
+#3 C:\xampp\htdocs\yiiapp\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\yiiapp\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yiiapp/index.php/books/index
+---
+2024/12/11 15:04:33 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "index". in C:\xampp\htdocs\yiiapp\yii\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\yiiapp\yii\framework\web\CController.php(270): CController->missingAction('index')
+#1 C:\xampp\htdocs\yiiapp\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#2 C:\xampp\htdocs\yiiapp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('books/index')
+#3 C:\xampp\htdocs\yiiapp\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\yiiapp\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yiiapp/index.php/books/index
+---
+2024/12/11 15:07:57 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "books". in C:\xampp\htdocs\yiiapp\yii\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\yiiapp\yii\framework\web\CController.php(270): CController->missingAction('books')
+#1 C:\xampp\htdocs\yiiapp\yii\framework\web\CWebApplication.php(282): CController->run('books')
+#2 C:\xampp\htdocs\yiiapp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('books/books')
+#3 C:\xampp\htdocs\yiiapp\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\yiiapp\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yiiapp/index.php/books/books
+---
+2024/12/11 15:08:12 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "books". in C:\xampp\htdocs\yiiapp\yii\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\yiiapp\yii\framework\web\CController.php(270): CController->missingAction('books')
+#1 C:\xampp\htdocs\yiiapp\yii\framework\web\CWebApplication.php(282): CController->run('books')
+#2 C:\xampp\htdocs\yiiapp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('books/books')
+#3 C:\xampp\htdocs\yiiapp\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\yiiapp\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yiiapp/index.php/books/books
+---
+2024/12/11 15:08:19 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "aaa". in C:\xampp\htdocs\yiiapp\yii\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\yiiapp\yii\framework\web\CController.php(270): CController->missingAction('aaa')
+#1 C:\xampp\htdocs\yiiapp\yii\framework\web\CWebApplication.php(282): CController->run('aaa')
+#2 C:\xampp\htdocs\yiiapp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('books/aaa')
+#3 C:\xampp\htdocs\yiiapp\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\yiiapp\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yiiapp/index.php/books/aaa
+---
